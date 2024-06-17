@@ -1,0 +1,97 @@
+body{
+    margin : 0px;
+    padding: 0px;
+}
+
+.container{
+    display: flex;
+    min-height: 100vh;
+
+}
+
+.sidebar{
+    background-color: #141319;
+    width: 200px;
+
+}
+.sidebarmenu{
+    background-color:gray;
+    margin: 30px;
+    padding: 10px;
+    border: 10px;
+    display: flex;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.menu-img{
+    width: 30px;
+}
+.link{
+    text-decoration: none;
+    color:white;
+}
+.sidebarmenu:hover{
+    background-color: azure;
+    
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .grid-item {
+    flex: 1 1 calc(25% - 20px); /* Four columns */
+    max-width: calc(25% - 20px);
+  }
+
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+
+.content{
+   background-image: url("https://media.istockphoto.com/id/1071294112/photo/world-map-with-visas-stamps-seals-travel-concept.jpg?s=2048x2048&w=is&k=20&c=3MUYLa3L7989xbG9dB41gaURo4asyk0Dl_uE_ZkFnlk=");
+   background-size:cover;
+    width: 100%;
+
+}
+.quote{
+    text-align: center;
+    background-color:#f5ecd5;
+    display: flexbox;
+    margin: 100px;
+    border-radius: 50px;
+    padding: 30px;
+    font-style:italic;
+    color: brown;
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .grid-item {
+        flex: 1 1 100%; 
+        max-width: 100%;
+      }
+  
+  }
+
+  /* Tablet Devices */
+
+  @media screen and (min-width: 769px) and (max-width: 992px) {
+  
+    .grid-item {
+        flex: 1 1 calc(50% - 20px); 
+        max-width: calc(50% - 20px);
+      }
+  }
+
+  /* Dekstop device */
+
+  @media screen and (min-width: 993px) and (max-width: 1200px) {
+    .grid-item {
+        flex: 1 1 calc(33.33% - 20px); 
+        max-width: calc(33.33% - 20px);
+      }
+  }
