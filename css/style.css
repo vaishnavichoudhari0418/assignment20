@@ -10,12 +10,12 @@ body{
 }
 
 .sidebar{
-    background-color: #141319;
+    background-color:black;
     width: 200px;
 
 }
 .sidebarmenu{
-    background-color:gray;
+    background-color:beige;
     margin: 30px;
     padding: 10px;
     border: 10px;
@@ -28,7 +28,7 @@ body{
 }
 .link{
     text-decoration: none;
-    color:white;
+    color:brown;
 }
 .sidebarmenu:hover{
     background-color: azure;
@@ -54,14 +54,22 @@ body{
   }
 
 .content{
-   background-image: url("https://media.istockphoto.com/id/1071294112/photo/world-map-with-visas-stamps-seals-travel-concept.jpg?s=2048x2048&w=is&k=20&c=3MUYLa3L7989xbG9dB41gaURo4asyk0Dl_uE_ZkFnlk=");
-   background-size:cover;
+  background-color: beige;
     width: 100%;
 
 }
+
+header, footer {
+    background-color:beige;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+
 .quote{
     text-align: center;
-    background-color:#f5ecd5;
+    background-color:#3333;
     display: flexbox;
     margin: 100px;
     border-radius: 50px;
@@ -95,3 +103,107 @@ body{
         max-width: calc(33.33% - 20px);
       }
   }
+
+
+  main {
+    padding: 2rem;
+}
+
+.recent-posts {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.recent-posts h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.post {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    background-color: black;
+    border-radius: 8px;
+    overflow: hidden;
+    color: antiquewhite;
+}
+
+.post img {
+    max-width: 100%;
+    height: auto;
+    flex: 1 1 40%;
+}
+
+.post-content {
+    flex: 1 1 60%;
+    padding: 1rem;
+}
+
+.post-content h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color:burlywood;
+}
+
+.post-content p {
+    margin-bottom: 0;
+}
+
+.deals {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.deal-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 1rem;
+    max-width: 300px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.deal-card:hover {
+    transform: scale(1.05);
+}
+
+.deal-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.deal-info {
+    padding: 1rem;
+    text-align: center;
+}
+
+.deal-info h2 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.deal-info p {
+    margin: 0.5rem 0;
+    color: #777;
+}
+
+.deal-info strong {
+    color: #ff6f61;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .post {
+        flex-direction: column;
+    }
+
+    .post img, .post-content {
+        flex: 1 1 100%;
+    }
+}
